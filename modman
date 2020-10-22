@@ -1,0 +1,3 @@
+app/code/community/Faonni/Compare/                            app/code/community/Faonni/Compare/
+app/design/frontend/base/default/layout/faonni/compare.xml     app/design/frontend/base/default/layout/faonni/compare.xml
+app/etc/modules/Faonni_Compare.xml                             app/etc/modules/Faonni_Compare.xml
