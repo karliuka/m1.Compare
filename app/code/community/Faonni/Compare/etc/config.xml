@@ -25,7 +25,7 @@ version="1.0"?>
 <config>
     <modules>
         <Faonni_Compare>
-        <version>1.1.0</version>
+        <version>2.0.0</version>
         </Faonni_Compare>
     </modules>
     <global>

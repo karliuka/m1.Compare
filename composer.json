@@ -3,7 +3,7 @@
     "license": "OSL-3.0",
     "type": "magento-module",
     "description": "Disable product compare on your website",
-    "homepage": "https://github.com/karliuka/m1.Compare",
+    "homepage": "https://github.com/icecubenz-open-mage/m1.Compare",
     "authors": [
         {
             "name": "Faonni"

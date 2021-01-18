@@ -22,7 +22,7 @@
 class Faonni_Compare_Helper_Product_Compare extends Mage_Catalog_Helper_Product_Compare
 {
     /**
-     * Retrieve url for adding product to conpare list
+     * Retrieve url for adding product to compare list
      *
      * @param   Mage_Catalog_Model_Product $product
      * @return  string
@@ -33,5 +33,20 @@ class Faonni_Compare_Helper_Product_Compare extends Mage_Catalog_Helper_Product_
             return parent::getAddUrl($product);
         }
         return false;
+    }
+
+    /**
+     * Retrieve url for adding product to compare list with or without Form Key
+     *
+     * @param Mage_Catalog_Model_Product $product
+     * @param bool $addFormKey
+     * @return string
+     */
+    public function getAddUrlCustom($product, $addFormKey = true)
+    {
+        if (Mage::helper('faonni_compare')->isEnabled()) {
+            return parent::getAddUrlCustom($product);
+        }
+        return '';
     }
 }
