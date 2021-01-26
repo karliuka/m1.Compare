@@ -1,14 +1,14 @@
 {
-    "name": "fannoi/compare",
+    "name": "faonni/magento-compare",
     "license": "OSL-3.0",
     "type": "magento-module",
     "description": "Disable product compare on your website",
     "homepage": "https://github.com/icecubenz-open-mage/m1.Compare",
-    "authors": [
-        {
-            "name": "Faonni"
-        }
-    ],
+    "version": "1.2.0",
+    "authors": [{
+        "name": "Karliuka Vitalii",
+        "email": "karliuka.vitalii@gmail.com"
+    }],
     "require": {
         "magento-hackathon/magento-composer-installer": "*"
     }
