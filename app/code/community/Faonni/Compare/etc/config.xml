@@ -1,8 +1,9 @@
-<?xml version="1.0"?>
+<?xml
+version="1.0"?>
 <!--
 /**
  * Faonni
- *  
+ *
  * NOTICE OF LICENSE
  *
  * This source file is subject to the Open Software License (OSL 3.0)
@@ -15,68 +16,68 @@
  *
  * Do not edit or add to this file if you wish to upgrade module to newer
  * versions in the future.
- * 
+ *
  * @package     Faonni_Compare
- * @copyright   Copyright (c) 2015 Karliuka Vitalii(karliuka.vitalii@gmail.com) 
+ * @copyright   Copyright (c) 2015 Karliuka Vitalii(karliuka.vitalii@gmail.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 -->
 <config>
-	<modules>
-		<Faonni_Compare>
-			<version>1.1.0</version>
-		</Faonni_Compare>
-	</modules>
-	<global>
-		<helpers>
-			<faonni_compare>
-				<class>Faonni_Compare_Helper</class>
-			</faonni_compare>
-			<catalog>
-                <rewrite>
-                    <product_compare>Faonni_Compare_Helper_Product_Compare</product_compare>
-                </rewrite>
-            </catalog>			
-		</helpers>
-		<models>
+    <modules>
+        <Faonni_Compare>
+        <version>1.2.0</version>
+        </Faonni_Compare>
+    </modules>
+    <global>
+        <helpers>
+        <faonni_compare>
+            <class>Faonni_Compare_Helper</class>
+        </faonni_compare>
+        <catalog>
+            <rewrite>
+            <product_compare>Faonni_Compare_Helper_Product_Compare</product_compare>
+            </rewrite>
+        </catalog>
+        </helpers>
+        <models>
+        <faonni_compare>
+            <class>Faonni_Compare_Model</class>
+        </faonni_compare>
+        </models>
+        <events>
+        <controller_action_predispatch_catalog>
+            <observers>
+            <faonni_compare_predispatch>
+                <class>faonni_compare/observer</class>
+                <method>preDispatch</method>
+            </faonni_compare_predispatch>
+            </observers>
+        </controller_action_predispatch_catalog>
+        <controller_action_layout_load_before>
+            <observers>
+            <faonni_compare_render_layout>
+                <class>faonni_compare/observer</class>
+                <method>renderLayout</method>
+            </faonni_compare_render_layout>
+            </observers>
+        </controller_action_layout_load_before>
+        </events>
+    </global>
+    <frontend>
+        <layout>
+        <updates>
             <faonni_compare>
-                <class>Faonni_Compare_Model</class>
+            <file>faonni/compare.xml</file>
             </faonni_compare>
-		</models>
-		<events>
-            <controller_action_predispatch_catalog>
-				<observers>
-					<faonni_compare_predispatch>
-						<class>faonni_compare/observer</class>
-						<method>preDispatch</method>
-					</faonni_compare_predispatch>					
-				</observers>
-            </controller_action_predispatch_catalog>
-            <controller_action_layout_load_before>
-                <observers>
-                    <faonni_compare_render_layout>
-                        <class>faonni_compare/observer</class>
-                        <method>renderLayout</method>
-                    </faonni_compare_render_layout>
-                </observers>
-            </controller_action_layout_load_before>			
-        </events> 		
-	</global>
-    <frontend>	
-		<layout>
-			<updates>
-				<faonni_compare>
-					<file>faonni/compare.xml</file>
-				</faonni_compare>
-			</updates>
-		</layout>		
+        </updates>
+        </layout>
     </frontend>
     <default>
         <catalog>
-            <recently_products>
-                <active>1</active>
-                <display_in_sidebar>1</display_in_sidebar>
-            </recently_products>
+        <recently_products>
+            <active>1</active>
+            <display_in_sidebar>1</display_in_sidebar>
+        </recently_products>
         </catalog>
-    </default>	
-</config> 
+    </default>
+</config>

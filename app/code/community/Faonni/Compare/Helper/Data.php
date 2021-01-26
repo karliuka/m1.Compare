@@ -1,7 +1,7 @@
 <?php
 /**
  * Faonni
- *  
+ *
  * NOTICE OF LICENSE
  *
  * This source file is subject to the Open Software License (OSL 3.0)
@@ -14,13 +14,12 @@
  *
  * Do not edit or add to this file if you wish to upgrade module to newer
  * versions in the future.
- * 
+ *
  * @package     Faonni_Compare
- * @copyright   Copyright (c) 2015 Karliuka Vitalii(karliuka.vitalii@gmail.com) 
+ * @copyright   Copyright (c) 2015 Karliuka Vitalii(karliuka.vitalii@gmail.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
-class Faonni_Compare_Helper_Data 
-	extends Mage_Core_Helper_Abstract
+class Faonni_Compare_Helper_Data extends Mage_Core_Helper_Abstract
 {
     /**
      * Check whether compare functionality should be enabled
@@ -29,10 +28,9 @@ class Faonni_Compare_Helper_Data
      */
     public function isEnabled()
     {
-        return (bool)Mage::helper('Core')->isModuleEnabled('Faonni_Compare') && 
-			Mage::getStoreConfig('catalog/recently_products/active');
+        return (bool)Mage::helper('Core')->isModuleEnabled('Faonni_Compare') && Mage::getStoreConfig('catalog/recently_products/active');
     }
-	
+
     /**
      * Check whether display compare blocks in Sidebar should be enabled
      *
@@ -40,7 +38,6 @@ class Faonni_Compare_Helper_Data
      */
     public function isDisplayInSidebar()
     {
-        return (bool)$this->isEnabled() && 
-			Mage::getStoreConfig('catalog/recently_products/display_in_sidebar');
-    }	
+        return (bool)$this->isEnabled() &&  Mage::getStoreConfig('catalog/recently_products/display_in_sidebar');
+    }
 }
