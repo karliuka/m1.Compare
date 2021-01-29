@@ -21,11 +21,9 @@ OpenMage LTS 19.4.x
 
 #### Manual Installation
 
-1. Create a folder {Magento root}/app/code/community/Faonni/Compare
+1. Download the corresponding [latest version](https://github.com/karliuka/m1.Compare/archive/1.2.0.zip)
 
-2. Download the corresponding [latest version](https://github.com/karliuka/m1.Compare/archive/1.2.0.zip)
-
-3. Copy the unzip content to the folder ({Magento root}/app/code/community/Faonni/Compare)
+3. Copy the unzip content to the {Magento root} folder
 
 ## Usage
 
@@ -63,3 +61,5 @@ Pleace, create backup so you can recover the data at a later time.
 #### Manual Uninstall
 
 1. Remove the folder {Magento root}/app/code/community/Faonni/Compare
+2. Remove the file {Magento root}/app/design/frontend/base/default/layout/faonni/compare.xml
+2. Remove the file {Magento root}/app/etc/modules/Faonni_Compare.xml
