@@ -6,7 +6,7 @@ Disable product compare on your website. Compare Control extension lets you get 
 
 Magento CE(EE) 1.6.x, 1.7.x, 1.8.x, 1.9.x
 
-OpenMage LTS 19.4.x
+OpenMage LTS 19.x
 
 #### Install via Composer
 
