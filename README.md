@@ -22,7 +22,7 @@ OpenMage LTS 19.4.x
 
 1. Create a folder {Magento root}/app/code/community/Faonni/Compare
 
-2. Download the corresponding latest version
+2. Download the corresponding [latest version](https://github.com/karliuka/m1.Compare/archive/1.2.0.zip)
 
 3. Copy the unzip content to the folder ({Magento root}/app/code/community/Faonni/Compare)
 
